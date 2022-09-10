@@ -1,0 +1,82 @@
+*{
+    box-sizing:border-box;
+    font-family: sans-serif;
+    color:whitesmoke;
+}
+body{
+    margin:0;
+    padding:0;
+}
+header .header{
+    background-color:rgb(99, 99, 99);
+    font-size:30px;
+    font-weight:600;
+    padding:20px 0;
+    text-align: center;
+    border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;
+    /* cursor: none; */
+}
+main{
+    padding:50px 0;
+}
+main .timeingHead{
+    font-size:12px;
+    text-align: center;
+    padding-bottom:50px;
+}
+main .timeingHead span{
+    color:red;
+}
+main .current-word{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom:50px;
+}
+.input-text{
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    font-size:17px;
+    padding:10px;
+    width:400px;
+    color:black;
+    border-radius: 5px;
+    border:none;
+}
+#massage{
+    text-align: center;
+    font-size: 17px;
+}
+.time_score{
+    display: flex;
+    justify-content: space-around;
+    padding:15px 15px 0 15px;
+}
+.time-left{
+    font-size:20px;
+    text-align: center;
+}
+.score{
+    font-size:20px;
+    text-align: center;
+}
+#restart{
+    display: none;
+    position:absolute;
+    background:white;
+    color:black;
+    padding:10px 20px;
+    font-size:20px;
+    border:1px solid transparent;
+    left:50%;
+    transform:translate(-50%);
+    transition:all 0.4s ease;
+    width:max-content;
+
+}
+#restart:hover{
+    background:none;
+    border-color:white;
+    color:white;
+}

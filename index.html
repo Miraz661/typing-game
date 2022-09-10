@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing speed test</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body style="background-color:rgb(39, 38, 38)">
+    <header>
+        <div class="header">
+            Practice and get rewarded
+        </div>
+    </header>
+    <main>
+        <div class="timeingHead">
+            <h2>Type the given word in <span>5</span> second</h2>
+            <h3>Game over if worng answer 5 times</h3>
+        </div>
+        <div class="current-word">
+            hello
+        </div>
+        <div class="input-text">
+            <input type="text" placeholder="Start typing..." id="corrent-text" autofocus>
+        </div>
+        <h2 id="massage">
+            
+        </h2>
+        <div class="time_score">
+            <h2 class="time-left">Time left : <span id="time">0</span></h2>
+            <h2 class="score">Score : <span id="scores">0</span></h2>
+        </div>
+        <input type="button" value="RESTART" id="restart" onclick="resetGame()">
+    </main>
+</body>
+</html>
