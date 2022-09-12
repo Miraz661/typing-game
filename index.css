@@ -14,7 +14,6 @@ header .header{
     padding:20px 0;
     text-align: center;
     border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;
-    /* cursor: none; */
 }
 main{
     padding:50px 0;
@@ -80,4 +79,11 @@ input{
     background:none;
     border-color:white;
     color:white;
+}
+
+@media (max-width:350px) {
+    #restart{
+        padding:8px 10px;
+        font-size:15px;
+    }
 }
