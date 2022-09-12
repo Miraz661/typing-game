@@ -31,6 +31,7 @@ main .current-word{
     font-size: 30px;
     text-align: center;
     padding-bottom:50px;
+    user-select: none;
 }
 .input-text{
     display: flex;
