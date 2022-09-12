@@ -44,6 +44,7 @@ function result(){
     }else{
         isplay++;
         showresult.innerHTML="Worng !!";
+        currentwd.value="";
     }
     indexnum = Math.floor(Math.random()*len);
     showword.innerHTML=txt[indexnum];
@@ -72,5 +73,6 @@ function resetGame(){
     indexnum = 0;
     showword.innerHTML=txt[indexnum];
     _score.innerHTML=score;
+    currentwd.value="";
     countInterval=setInterval(timecounter, 1000);
 }
