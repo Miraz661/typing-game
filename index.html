@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test your self</title>
+    <link rel="shortcut icon" href="favIcon-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;600&family=Open+Sans:wght@300;400&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2 class="header">Boost your typing journey</h2>
+    </header>
+    <section class="title">
+        <h3 id="title">Your have only <span class="timer">60</span> seconds left ...</h3>
+    </section>
+    <p class="current-text" id="current-txt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi error praesentium, architecto ducimus omnis ea quos harum voluptates hic eveniet. Unde illo molestias cupiditate alias optio possimus facere aut laudantium dicta? Libero tempora commodi sapiente quos ducimus veritatis error animi quo asperiores consequuntur, eum, delectus voluptas ullam, veniam maiores placeat!
+    </p>
+    <div class="user-section">
+        <input type="text" id="user-input" placeholder="Type here..." autocomplete="off" autofocus>
+    </div>
+    <div class="result">
+        <span class="wrong">
+            Wrong : <span id="wrong-score">0</span>
+        </span>
+        <span class="correct">
+            <span id="correct-score">0</span> : Correct
+        </span>
+    </div>
+    <input type="button" value="Restart" id="restart">
+    <div id="scores">
+        <div class="score">
+            <button id="scoreBoardButton">x</button>
+            <h2>Your score is <span id="scoreInWord">40</span> WPM and <span id="scoreInChar">340</span> CPM</h2>
+        </div>
+    </div>
+</body>
+</html>
