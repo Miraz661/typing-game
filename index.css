@@ -124,8 +124,24 @@ input:focus{
     background-color: #ffffff;
     border: 1px solid #ffffff;
     transition: all 0.4s cubic-bezier(0, 3.52, 1, 4.93);
+    border-radius: 5px;
 }
 .score button:hover{
     border-color:#222;
     border-radius: 5px;
+}
+
+
+@media (max-width:300px){
+    .score h2{
+        color:#222;
+        font-size:15px;
+    }
+    .score{
+        padding: 50px 20px;
+    }
+    .current-text{
+        height:100px;
+        overflow: hidden;
+    }
 }
