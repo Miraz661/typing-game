@@ -61,8 +61,8 @@ input:focus{
 }
 #restart{
     position: absolute;
-    width:max-content;
-    padding:10px 20px;
+    width:120px;
+    padding:10px;
     color: #222;
     font-size:20px;
     font-weight: 600;
@@ -146,6 +146,7 @@ input:focus{
     }
     #restart{
         font-size:15px;
+        width:80px;
     }
     #restart:hover{
         font-size: 15px;
