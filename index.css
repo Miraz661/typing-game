@@ -144,4 +144,10 @@ input:focus{
         height:100px;
         overflow: hidden;
     }
+    #restart{
+        font-size:15px;
+    }
+    #restart:hover{
+        font-size: 15px;
+    }
 }
