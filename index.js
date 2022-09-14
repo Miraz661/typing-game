@@ -13,7 +13,7 @@ const restart = document.querySelector("#restart");
 
 
 
-let time_counter=6,charCounter=0;
+let time_counter=60,charCounter=0;
 let testTxt,correct=0,wrong=0;
 let ranlen1 = Math.floor(Math.random()*20)+500;
 let ranlen2 = Math.floor(Math.random()*7649)+1;
