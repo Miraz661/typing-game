@@ -26,9 +26,15 @@ body{
 #title>span{
     color:yellow;
 }
-.current-text{
+.txt-section{
     font-size:17px;
     padding: 20px;
+}
+.txt-section span{
+    color: #525257;
+}
+.current-text{
+    display: inline;
 }
 .user-section{
     display: flex;
@@ -72,6 +78,7 @@ input:focus{
     transition: all 0.4s ease;
     margin-bottom:100px;
     display: none;
+    text-align: center;
 }
 #restart:hover{
     background: none;
@@ -108,7 +115,7 @@ input:focus{
 }
 .score h2{
     color:#222;
-    font-size:25px;
+    font-size:15px;
 }
 .score #scoreInWord,.score #scoreInchar{
     color:#222;
@@ -146,7 +153,6 @@ input:focus{
     }
     #restart{
         font-size:15px;
-        width:80px;
     }
     #restart:hover{
         font-size: 15px;
