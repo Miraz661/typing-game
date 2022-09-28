@@ -9,6 +9,7 @@ const restart = document.querySelector("#restart");
  const scoreBoard = document.querySelector("#scores");
  const scoreInWord = document.querySelector("#scoreInWord");
  const scoreInChar = document.querySelector("#scoreInChar");
+ const txtDone = document.querySelector(".txt_done");
 
 
 
@@ -58,16 +59,12 @@ function typingGame(){
             }
             charCounter+=end;
             let currentWord=testTxt.slice(front,end);
-            console.log(currentWord);
-            console.log(end);
             if(userLastWord===currentWord && end!=0){
                 corscore++;
                 correctScore.innerHTML=corscore;
-                resultColor.style.color="blue";
                 
             }else{
                 wrongscore++;
-                resultColor.style.color="red";
                 wrongScore.innerHTML=wrongscore;
             }
             let colorInterval=setInterval(() => {
@@ -75,8 +72,8 @@ function typingGame(){
                 clearInterval(colorInterval);
             }, 1000);
             testTxt=testTxt.replace(currentWord,"");
+            txtDone.innerHTML=txtDone.innerHTML.concat(currentWord);
             testText.innerHTML=testTxt;
-            // front=end;
             front=0;
             end=0;
         }
@@ -88,9 +85,11 @@ document.addEventListener("DOMContentLoaded",()=>{
 })
 
 restart.addEventListener("click",()=>{
+    restart.style.display="none";
     clearInterval(countInterval);
     time_counter=60,charCounter=0;
     testTxt,correct=0,wrong=0;
+    txtDone.innerHTML="";
     ranlen1 = Math.floor(Math.random()*20)+500;
     ranlen2 = Math.floor(Math.random()*7649)+1;
     front=0,end=0,corscore=0,wrongscore=0;
