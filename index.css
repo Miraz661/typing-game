@@ -117,7 +117,7 @@ input:focus{
     color:#222;
     font-size:15px;
 }
-.score #scoreInWord,.score #scoreInchar{
+#scoreInWord,#scoreInchar{
     color:#222;
 }
 .score button{
